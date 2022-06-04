@@ -1,0 +1,321 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg');
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: -245px 660px;
+    background-size: 300px;
+}
+
+.btn {
+    width: 16%;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 50px;
+    background: #FF5D50;
+}
+
+.price h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.price button {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: #56C4C5;
+    border: 1.5px solid #56C4C5;
+    background-color: #fff;
+}
+
+.price button:active {
+    content: '';
+    background: #56c4c5;
+    color: #fff;
+}
+
+.price-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 72%;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.header {
+    height: 70vh;
+
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg') no-repeat top right;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    top: 12rem;
+}
+
+.header-info .title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.bg-gray {
+    width: 100%;
+    height: 50vh;
+    background-color: #F7F9FD;
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    border-radius: 0 0 0 300px;
+}
+
+/* price */
+.price {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* price-basic */
+.same {
+    list-style: none;
+    top: 35px;
+}
+
+.price-program {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+.price-basic {
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 40%;
+    margin-right: 36px;
+    margin-left: 36px;
+    background: #fff;
+}
+
+.price-basic h4 {
+    font-size: 24px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.border-line {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.price-basic .price-slogn {
+    padding: 1rem;
+    text-align: center;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.price-list {
+    width: 200px;
+    background: #F5F5F5;
+    padding: 1rem;
+    text-align: center;
+    list-style: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.price-list .user {
+    font-size: 12px;
+}
+
+.price-list .user-price {
+    font-size: 32px;
+    color: #56C4C5;
+}
+
+.price-list .user-price span {
+    font-size: 12px;
+}
+
+.price-list .month {
+    color: #221E1F;
+}
+
+.price-serve {
+    text-align: center;
+    padding: 0rem 2rem;
+    margin-bottom: 20px;
+}
+
+.price-serve img {
+    margin-right: 8px;
+}
+
+.price-serve li {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+}
+
+.price-serve-btn {
+    padding: 0.5rem 1rem;
+    /* border: 1px solid #000; */
+    color: #fff;
+    background: #56C4C5;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* promble */
+.promble h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.promble-list {
+    margin: auto;
+    width: 64%;
+    list-style: none;
+}
+
+.promble-item {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+
+.promble-item-title {
+    font-size: 16px;
+}
+
+.active {
+    color: #56C4C5;
+}
+
+.promble-txt {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+
+.footer {
+    text-align: center;
+    color: #221E1F;
+    background-color: #F5F5F5;
+    padding: 1rem;
+}
+
+@media (max-width: 375px) {
+    .brand-logo img {
+        width: 70%;
+    }
+    .navbar a.btn {
+        width: 30%;
+        height: 48px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .navbar {
+        border-bottom: 2px solid #FFD153;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .header {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg') no-repeat;
+        height: 70vh;
+        margin-bottom: 100px;
+    }
+    .header-info {
+        top: 0;
+        text-align: center;
+    }
+    .navbar .btn {
+        width: 100%;
+    }
+    .bg-gray {
+        border-radius: 0 0 0 150px;
+    }
+    .price-btn {
+        /* border: 1px solid #000; */
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .price-btn-item {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    .price-btn-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .price-basic {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .price-box {
+        padding: 8px;
+    }
+
+    .price-list {
+        width: 100%;
+    }
+
+    .price-program {
+        z-index: 1;
+        flex-wrap: wrap;
+    }
+    .price-serve {
+        text-align: center;
+        /* border: 1px solid #000; */
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .promble-list {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
