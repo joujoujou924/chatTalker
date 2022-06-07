@@ -5,9 +5,13 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .container {
-    max-width: 1088px;
+    max-width: 1128px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -16,8 +20,6 @@
 /* header */
 .header {
     height: 100vh;
-
-
     background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home.svg') no-repeat center right / 65% 75%, url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg') no-repeat top right;
 }
 .navbar {
@@ -303,6 +305,8 @@
 .user-star img {
     width: 16px;
 }
+
+
 
 /* footer */
 .footer-banner {

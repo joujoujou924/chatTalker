@@ -10,22 +10,27 @@ a {
 }
 
 .container {
-    max-width: 1088px;
+    max-width: 1128px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
 
     background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg');
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-position: -245px 660px;
     background-size: 300px;
 }
 
+.brand-logo img {
+    width: 80%;
+}
+
 .btn {
-    width: 16%;
-    height: 60px;
-    font-size: 24px;
+    /* width: 16%;
+    height: 60px; */
+    white-space: nowrap;
+    font-size: 18px;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -62,18 +67,19 @@ a {
     margin: auto;
     width: 72%;
     list-style: none;
+    overflow: auto;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header {
     height: 70vh;
-
     background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg') no-repeat top right;
 }
 
@@ -81,6 +87,8 @@ a {
     display: flex;
     flex-direction: column;
     top: 12rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-info .title {
@@ -120,6 +128,7 @@ a {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 40%;
+    white-space: nowrap;
     margin-right: 36px;
     margin-left: 36px;
     background: #fff;
@@ -143,8 +152,13 @@ a {
 
 .price-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 4rem;
+}
+
+.same {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .price-list {
@@ -175,9 +189,8 @@ a {
 }
 
 .price-serve {
-    text-align: center;
-    padding: 0rem 2rem;
     margin-bottom: 20px;
+    padding: 0 2rem;
 }
 
 .price-serve img {
@@ -187,7 +200,7 @@ a {
 .price-serve li {
     display: flex;
     list-style: none;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .price-serve-btn {
@@ -244,9 +257,121 @@ a {
     padding: 1rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+    .navbar {
+        border-bottom: 2px solid #FFD153;
+        background: #fff;
+    }
+    .header-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header {
+        height: 100vh;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg') no-repeat top right;
+        background-size: cover;
+        background-position: 0 -195px;
+    }
+    .header-info {
+        top: 64px;
+    }
+    .bg-gray {
+        height: 96vh;
+    }
+    .price-btn {
+        white-space: nowrap;
+    }
+    .price-btn-item {
+        padding: 16px 8px;
+    }
+    .price-program {
+        flex-wrap: wrap;
+    }
+    .price-basic {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .price-basic .price-slogn {
+        padding: 3rem;
+        font-size: 18px;
+    }
+    .same {
+        font-size: 24px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    /* .price-serve li {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } */
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        max-width: 100%;
+        border-bottom: 2px solid #FFD153;
+        background: #fff;
+    }
+    .header {
+        height: 100vh;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg') no-repeat top right;
+        background-size: contain;
+        background-position: 0px 50px;
+    }
+    .header-info {
+        top: 36px;
+    }
+    .bg-gray {
+        height: 83vh;
+    }
+    .price-btn {
+        white-space: nowrap;
+    }
+    .price-btn-item {
+        padding: 16px 8px;
+    }
+    .price-serve {
+        border: 1px solid #000;
+    }
+}
+
+/* @media (max-width: 375px) {
+    .navbar {
+        background: #fff;
+        border-bottom: 2px solid #FFD153;
+    }
+    .header {
+        height: 100vh;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg') no-repeat top right;
+        background-size: contain;
+        background-position: 0 86px;
+    }
+    .header-info {
+        top: 70px;
+    }
+    .bg-gray {
+        height: 70vh;
+    }
+} */
+
+/* // */
+
+
+/* @media (max-width: 768px) {
     .brand-logo img {
         width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-logo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .brand-logo img {
+        width: 50%;
     }
     .navbar a.btn {
         width: 30%;
@@ -275,10 +400,7 @@ a {
         border-radius: 0 0 0 150px;
     }
     .price-btn {
-        /* border: 1px solid #000; */
         display: flex;
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
         overflow-x: auto;
         white-space: nowrap;
     }
@@ -309,7 +431,6 @@ a {
     }
     .price-serve {
         text-align: center;
-        /* border: 1px solid #000; */
         padding: 0;
         white-space: nowrap;
     }
@@ -318,4 +439,4 @@ a {
         width: 100%;
         margin-bottom: 60px;
     }
-}
+} */
