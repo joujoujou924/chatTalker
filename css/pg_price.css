@@ -127,7 +127,7 @@ a {
 .price-basic {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 40%;
+    width: 45%;
     white-space: nowrap;
     margin-right: 36px;
     margin-left: 36px;
@@ -221,7 +221,7 @@ a {
 }
 .promble-list {
     margin: auto;
-    width: 64%;
+    width: 100%;
     list-style: none;
 }
 
@@ -288,11 +288,10 @@ a {
         flex-wrap: wrap;
     }
     .price-basic {
-        width: 70%;
+        width: 100%;
         margin-bottom: 20px;
     }
     .price-basic .price-slogn {
-        padding: 3rem;
         font-size: 18px;
     }
     .same {
@@ -300,10 +299,10 @@ a {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    /* .price-serve li {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    } */
+    .promble-list {
+        width: 100%;
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -324,24 +323,31 @@ a {
     .bg-gray {
         height: 83vh;
     }
+    .price-program {
+        max-width: 100%;
+    }
     .price-btn {
         white-space: nowrap;
     }
     .price-btn-item {
         padding: 16px 8px;
     }
-    .price-serve {
-        border: 1px solid #000;
+    .price-slogn {
+        text-align: center;
+    }
+    .promble-list {
+        width: 100%;
+        margin-bottom: 60px;
     }
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
     .navbar {
         background: #fff;
         border-bottom: 2px solid #FFD153;
     }
     .header {
-        height: 100vh;
+        height: 74vh;
         background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg') no-repeat top right;
         background-size: contain;
         background-position: 0 86px;
@@ -352,7 +358,19 @@ a {
     .bg-gray {
         height: 70vh;
     }
-} */
+    .price-basic .price-slogn {
+        font-size: 16px;
+    }
+    .price-box {
+        padding: 1rem 1rem;
+    }
+    .same {
+        padding: 0 1rem;
+    }
+    .price-serve {
+        padding: 0;
+    }
+}
 
 /* // */
 
